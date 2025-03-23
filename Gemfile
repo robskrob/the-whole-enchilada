@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+
+ruby '3.4.2'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.2"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -63,3 +66,5 @@ group :test do
 end
 
 gem "cssbundling-rails", "~> 1.4"
+
+gem "pg", "1.5.9"
