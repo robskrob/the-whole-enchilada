@@ -1,1 +1,4 @@
 // Entry point for your Sass build
+
+@use "./base.sass.scss" as *;
+@use "./home.sass.scss" as *;

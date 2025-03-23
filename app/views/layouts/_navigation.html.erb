@@ -1,0 +1,24 @@
+<header>
+  <h1 class="logo">Logo</h1>
+  <input id="nav-toggle" class="nav-toggle" type="checkbox"/>
+  
+  <nav class="nav-container">
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <%# <li><%= link_to 'Recipes', recipes_path %1></li> %>
+      <%# <li><%= link_to 'Account', account_path %1></li> %>
+      <%# <li><%= link_to 'Create', new_recipe_path %1></li> %>
+      
+      <%# <% if current_user.present? %1> %>
+      <%#   <li><%= button_to 'Log Out', session_path(current_user.id), method: :delete, class: 'Account__tab' %1></li> %>
+      <%# <% end %1> %>
+      
+      <%# <li><%= link_to 'Contact Us', contact_us_path %1></li> %>
+    </ul>
+  </nav>
+  
+  <label class="nav-toggle-label" for="nav-toggle">
+    <span></span>
+  </label>
+</header>
+
