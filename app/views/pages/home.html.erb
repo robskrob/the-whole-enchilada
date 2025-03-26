@@ -1,2 +1,12 @@
-
-<h1 class="home">Home page<h1>
+<main>
+  <h1 class="home">Home page</h1>
+  <ul class="flex flex-wrap">
+    <% @recipes.each do |recipe| %>
+      <li>
+        <h3>
+          <%= recipe.title%>
+        </h3>
+      </li>
+    <% end %>
+  </ul>
+</main>

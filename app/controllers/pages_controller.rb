@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
-  def home; end
+  def home
+    @recipes = Recipe.all
+  end
 
   def contact; end
 end
