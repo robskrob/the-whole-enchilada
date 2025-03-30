@@ -1,0 +1,4 @@
+docker stop enchilada-db && sudo docker rm enchilada-db
+docker run --name enchilada-db -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=the_whole_enchilada -e POSTGRES_USER=app -e  -d postgres -c log_statement=all
+./rails db:setup
+./rails db:migrate
