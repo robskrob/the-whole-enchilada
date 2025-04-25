@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Mac OS
 
-Things you may want to cover:
+Follow the below instructions to set up local development
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+brew install mise
+mise use -g ruby@3.4.2
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+source ~/.zshrc
+brew install libpq
+brew install postgresql
+bin/bundle install
+brew install colima
+brew install docker
+brew install qemu
+bin/setup-db
+bin/rails db:setup
+bin/rails db:migrate
+npm install
+bin/dev
+```
